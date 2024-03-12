@@ -1,0 +1,123 @@
+@charset "UTF-8";
+
+/* 산세리프 wanted sans variable */
+@font-face{
+	font-family:'WantedSans';
+	font-weight: 400;
+	src:url("../font/WantedSansVariable.woff2") format('woff2');
+}
+@font-face{
+	font-family:'WantedSans';
+	font-weight: 500;
+	src:url("../font/WantedSansVariable.woff2") format('woff2');
+}
+@font-face{
+	font-family:'WantedSans';
+	font-weight: 600;
+	src:url("../font/WantedSansVariable.woff2") format('woff2');
+}
+@font-face{
+	font-family:'WantedSans';
+	font-weight: 700;
+	src:url("../font/WantedSansVariable.woff2") format('woff2');
+}
+
+/* 여기어떄 잘난체 */
+@font-face{
+	font-family:'Jalnan';
+	font-weight: 400;
+	src:url("../font/JalnanGothic.woff2") format('woff2'),
+	url("../font/JalnanGothic.woff") format('woff');
+}
+
+/* noto chk kr */
+@font-face{
+	font-family:'NotoCJKkr';
+	font-weight: 500;
+	src:url("../font/NotoSerifCJKkr-Medium.woff2") format('woff2'),
+	url("../font/NotoSerifCJKkr-Medium.woff") format('woff');
+}
+@font-face{
+	font-family:'NotoCJKkr';
+	font-weight: 700;
+	src:url("../font/NotoSerifCJKkr-SemiBold.woff2") format('woff2'),
+	url("../font/NotoSerifCJKkr-SemiBold.woff") format('woff');
+}
+
+/* Montserrat */
+@font-face{
+	font-family:'Monst';
+	font-weight: 800;
+	src:url("../font/Montserrat-ExtraBold.woff") format('woff1');
+}
+
+/* Georgia */
+/* @font-face{
+	font-family:'Georgia';
+	font-weight: 800;
+	src:url("../font/Montserrat-ExtraBold.woff") format('woff1');
+} */
+
+/* Lato  */
+@font-face{
+	font-family:'Lato';
+	font-weight: 200;
+	src:url("../font/Lato-Thin.woff2") format('woff2'),
+	url("../font/Lato-Thin.woff") format('woff');
+}
+@font-face{
+	font-family:'Lato';
+	font-weight: 300;
+	src:url("../font/Lato-Light.woff2") format('woff2'),
+	url("../font/Lato-Light.woff") format('woff');
+}
+@font-face{
+	font-family:'Lato';
+	font-weight: 400;
+	src:url("../font/Lato-Regular.woff2") format('woff2'),
+	url("../font/Lato-Regular.woff") format('woff');
+}
+@font-face{
+	font-family:'Lato';
+	font-weight: 500;
+	src:url("../font/Lato-Thin.woff2") format('woff2'),
+	url("../font/Lato-Thin.woff") format('woff');
+}
+@font-face{
+	font-family:'Lato';
+	font-weight: 600;
+	src:url("../font/Lato-Bold.woff2") format('woff2'),
+	url("../font/Lato-Bold.woff") format('woff');
+}
+@font-face{
+	font-family:'Lato';
+	font-weight: 800;
+	src:url("../font/Lato-Black.woff2") format('woff2'),
+	url("../font/Lato-Black.woff") format('woff');
+}
+
+/* 스포카 산스  */
+@font-face{
+	font-family:'Spoqa';
+	font-weight: 200;
+	src:url("../font/Spoqa_Han_Sans_Thin.woff2") format('woff2'),
+	url("../font/Spoqa_Han_Sans_Thin.woff") format('woff');
+}
+@font-face{
+	font-family:'Spoqa';
+	font-weight: 300;
+	src:url("../font/Spoqa_Han_Sans_Light.woff2") format('woff2'),
+	url("../font/Spoqa_Han_Sans_Light.woff") format('woff');
+}
+@font-face{
+	font-family:'Spoqa';
+	font-weight: 400;
+	src:url("../font/SpoqaHanSans-Regular.woff2") format('woff2'),
+	url("../font/SpoqaHanSans-Regular.woff") format('woff');
+}
+@font-face{
+	font-family:'Spoqa';
+	font-weight: 600;
+	src:url("../font/SpoqaHanSans-Bold.woff2") format('woff2'),
+	url("../font/SpoqaHanSans-Bold.woff") format('woff');
+}

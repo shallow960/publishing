@@ -1,0 +1,42 @@
+@charset "UTF-8";
+
+/* reset style [start] */
+html,body, iframe,h1, h2, h3, h4, h5, h6, p, blockquote,pre,
+q, s, dl, dt, dd, ol, ul, li, fieldset, form, input, table,tr, th ,td{ margin: 0; padding: 0; border:0; line-height: 1.5em; }
+img, fieldset{border:0 none;}
+
+
+body{
+    position:relative;
+    font-size:13px;line-height:1.8em;
+    color:#545454;
+    font-family: NG, "나눔바른고딕", NGB, "나눔바른고딕 굵게","돋움", Dotum, sans-serif;
+}
+
+strong{ font-weight: bold; }
+em,dfn,cite,address{ font-style: normal; }
+sup,sub{ font-size: .92em; }
+del{ text-decoration: line-through; }
+button{cursor:pointer;border:none;background:none;margin:0;padding:0}
+button::-moz-focus-inner {  border: 0;   padding: 0; }
+span.button,img.button,a.button {vertical-align:middle;}
+ol, ul, li { list-style:none;}
+table {border-collapse:collapse; border-spacing:0;}
+legend {position:absolute; visibility:hidden; overflow:hidden; width:0; height:0; font-size:0%;}
+table caption {display:none;}
+hr {display:none;}
+
+a:link { color:#545454; text-decoration:none; }
+a:visited { color:#545454; text-decoration:none; }
+a:hover { color:#545454; text-decoration:underline; }
+a:active { color:#545454; text-decoration:underline; }
+
+.clearfix:after {display:block; clear:both; content:"."; visibility:hidden; height:0;}
+.clearfix {display: inline-block;}
+* html .clearfix {height: 1%;}
+.clearfix {display: block;}
+.skip {position:absolute; overflow:hidden; height:0; width:0; font-size:0; visibility:hidden;}
+.clear{clear: both;}
+
+/* 입력 form */
+input[type="text"]{padding:3px;border:solid 1px #ccc;}
