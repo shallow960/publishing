@@ -120,23 +120,15 @@ function Loadingresume2() {
 	});
 }
 window.addEventListener('scroll', function() {
-    // 이벤트 핸들러를 한 번만 실행하고 이벤트를 제거합니다.
-    document.removeEventListener('scroll', addWwwwClass);
+    var scrollPosition = window.scrollY || window.pageYOffset;
 
-    // HTML 요소에 wwww 클래스를 추가합니다.
-    document.documentElement.classList.add('wwww');
+    if (scrollPosition > 900) {
+        document.documentElement.classList.add('fixed');
+    } else {
+        document.documentElement.classList.remove('fixed');
+    }
 });
 
-// 스크롤 이벤트를 감지하여 wwww 클래스를 추가하는 함수
-function addWwwwClass() {
-    document.documentElement.classList.add('wwww');
-}
-
-// 페이지가 로딩될 때 스크롤 이벤트를 감지합니다.
-window.addEventListener('load', function() {
-    // 스크롤 이벤트를 감지하여 wwww 클래스를 추가합니다.
-    document.addEventListener('scroll', addWwwwClass);
-});
 
 
 'use strict';
