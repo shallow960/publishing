@@ -119,7 +119,15 @@ function Loadingresume2() {
 
 	});
 }
+window.addEventListener('scroll', function() {
+    var scrollPosition = window.scrollY || window.pageYOffset;
 
+    if (scrollPosition > 1000) {
+        document.documentElement.classList.add('onooo');
+    } else {
+        document.documentElement.classList.remove('onooo');
+    }
+});
 
 'use strict';
 
