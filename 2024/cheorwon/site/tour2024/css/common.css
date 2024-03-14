@@ -187,6 +187,7 @@ input[type="submit"]{cursor:pointer;}
 .lnb_curtain{display:none;}
 
 .fixed #header{background-color: #fff; box-shadow: 0 10px 12px rgba(85,108,144,0.2);}
+.wide_color #header{background-color: #fff; box-shadow: 0 10px 12px rgba(85,108,144,0.2);}
 .lnb_open #header{background-color: #fff;}
 
 .fixed .logo .logo_white,
