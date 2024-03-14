@@ -119,14 +119,22 @@ function Loadingresume2() {
 
 	});
 }
+//lnb scroll color
 window.addEventListener('scroll', function() {
     var scrollPosition = window.scrollY || window.pageYOffset;
 
     if (scrollPosition > 900) {
-        document.documentElement.classList.add('fixed');
+        document.documentElement.classList.add('wide_color');
     } else {
-        document.documentElement.classList.remove('fixed');
+        document.documentElement.classList.remove('wide_color');
     }
+});
+$(window).on('resize', function(){
+	if ($('html').width() <= 1800) {
+		document.documentElement.classList.add('fixed');
+	}esle{
+		document.documentElement.classList.remove('fixed');
+	}
 });
 
 
