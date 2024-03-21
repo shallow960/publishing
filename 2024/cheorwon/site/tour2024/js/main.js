@@ -133,7 +133,7 @@ $(window).on('resize', function(){
 	if ($('html').width() <= 1800) {
 		document.documentElement.classList.add('fixed');
 		document.documentElement.classList.remove('wide_color');
-	}esle{
+	}else{
 		document.documentElement.classList.remove('fixed');
 	}
 });
