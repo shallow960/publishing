@@ -8,3 +8,7 @@
 + 충북도청 메인 레이아웃
   + [어린이도청](https://shallow960.github.io/publishing/2024/chungbuk2024/site/child2024/main.html)
   + [스마트쉼센터](https://shallow960.github.io/publishing/2024/chungbuk2024/site/iapc2024/main.html)
+
+### scropt 기술구현
++슬롯머신 효과
+  +[(https://shallow960.github.io/publishing/script기술구현/html/슬롯머신.html)]
