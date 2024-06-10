@@ -256,7 +256,7 @@ div[data-menu-open] button[data-menu-button], div[data-menu-close] button[data-m
 #lnb .nav .depth2 .depth2_list .depth2_item .depth2_text[target="_blank"]:before{display:none;}
 #lnb .nav .depth2 .depth2_list .depth2_item .depth2_text[target="_blank"]:after{display:none;}
 #lnb .nav .depth2 .depth2_list .depth2_item .depth2_text[target="_blank"] span{padding-right:16px;}
-#lnb .nav .depth2 .depth2_list .depth2_item .depth2_text[target="_blank"] span:before{display:block;position:absolute;top:5px;right:0;width:10px;height:10px;background:url(../images/common_layout/common_icon.png) no-repeat left top;content:'';}
+#lnb .nav .depth2 .depth2_list .depth2_item .depth2_text[target="_blank"] span:before{display:block;position:absolute;top:5px;right:0;width:10px;height:10px;content:'';}
 #lnb .nav .depth2 .depth2_list .depth2_item .depth2_text[target="_blank"]:hover span:before{background-position:-20px top;}
 @media all and (max-width:1400px){
     .header_top .site_link ul li a{padding:15px 8px 14px;}
