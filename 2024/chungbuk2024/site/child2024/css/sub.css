@@ -1,8 +1,0 @@
-@charset "utf-8";
-
-/* Layout */
-@import url('/publishing/default/css/default.css')/* 기본 default */;
-@import url('/publishing/2024/chungbuk2024/common/common2021/css/common_layout.css')/* 상,하단 공통 레이아웃 */;
-@import url('/publishing/2024/chungbuk2024/common/common2021/css/common_sub_layout.css')/* 좌측메뉴 공통 */;
-@import url('sub_layout.css')/* 개별 사이트id별로 좌측메뉴 공통 깨야할 때 */;
-@import url('sub_content.css');
