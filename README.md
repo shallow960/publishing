@@ -9,8 +9,8 @@
 ***
 ### 2023 프로젝트
 + 음성군청 메인 레이아웃
-  +[팩토리투어](https://shallow960.github.io/publishing/2023/eumseong/site/factory/main.html)
-  +[사진DB](https://shallow960.github.io/publishing/2023/eumseong/site/photo/main.html)
+  + [팩토리투어](https://shallow960.github.io/publishing/2023/eumseong/site/factory/main.html)
+  + [사진DB](https://shallow960.github.io/publishing/2023/eumseong/site/photo/main.html)
 
 ***
 ### scropt 기술구현
