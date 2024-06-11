@@ -1,0 +1,6 @@
+@charset "UTF-8";
+
+/* 한신정보기술 안형주 23.12.05 */
+.hsg_tour .lnb .menu:before{display:none;}
+.hsg_tour .lnb .menu .depth1_list{padding-left:380px;}
+.hsg_tour #header .header_top .right_area .right:before{display:none;}
