@@ -165,7 +165,7 @@ try {
 
 				$OldImgList.slick({
 					accessibility: true, //접근성 여부
-					autoplay : false,
+					autoplay : true,
 					autoplaySpeed : 0,
 					speed : 2500,
 					dots : false,
@@ -173,7 +173,7 @@ try {
 					swipe : true,
 					swipeToSlide : true,
 					slidesToShow : 3,
-					slidesToScroll : 2,
+					slidesToScroll : 1,
 					variableWidth : true,
 					infinite: true,
 					arrows : true,
