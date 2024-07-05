@@ -62,6 +62,7 @@
 
 /* 폼영역 시작 */
 .form_search_box{width:100%;box-sizing:border-box;font-size:0;line-height:0;}
+.form_search_box fieldset{border:none;margin:0;}
 .form_search_box .form_box{display:inline-block;position:relative;width:calc(100% - 131px);;padding:20px 30px;border-radius:40px;background-color:#fff;box-shadow:0px 31px 80px rgba(32, 54, 121, 0.15);}
 .form_search_box .form_box .input_form{width:calc(100% - 90px);}
 .form_search_box .form_box .input_form .search_input{position:relative;width:100%;padding:0 40px;border:none;color:#757b8e;font-size:18px;font-weight:400;line-height:40px;letter-spacing:0;}
