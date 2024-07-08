@@ -1,0 +1,8 @@
+@charset "utf-8";
+
+/* Layout */
+@import url('/publishing/2023/chungbuk2023/site/brand/css/common/default.css')/* 기본 default */;
+@import url('/publishing/2023/chungbuk2023/site/brand/css/common/layout.css')/* 만족도 */;
+@import url('/publishing/2023/chungbuk2023/site/brand/css/common/common_layout.css')/* 상,하단 공통 레이아웃 */;
+@import url('common_layout.css')/* 새얼굴찾기 상하단 공통 깨야할 때 */;
+@import url('main_layout.css')/* 새얼굴찾기 메인레이아웃 */;
