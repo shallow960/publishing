@@ -8,7 +8,8 @@
 
         ```
         </details>
-
+        
+    + 4월
         + [스마트쉼센터](https://shallow960.github.io/publishing/2024/chungbuk2024/site/iapc2024/main.html)
         <details>
         <summary>작업과정</summary>
