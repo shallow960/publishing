@@ -23,8 +23,16 @@
 + 슬롯머신 효과 
   + [슬롯머신](https://shallow960.github.io/publishing/script기술구현/html/슬롯머신.html)
 
-accordion
-└── item
-    ├── header
-    │   └── button
-    └── panel
+<!-- 아코디언 컴포넌트 -->
+<div class="y9-accordion">
+  <!-- 아코디언 아이템 -->
+  <div class="y9-accordion__item">
+    <!-- 아코디언 헤더 -->
+    <div class="y9-accordion__heading">
+      <!-- 아코디언 헤더 버튼 -->
+      <a href class="y9-accordion__button">
+    </div>
+    <!-- 아코디언 패널 -->
+    <div class="y9-accordion__panel"></div>
+  </div>
+</div>
