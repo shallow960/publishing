@@ -7,7 +7,7 @@
   + [문화관광(1월)](https://shallow960.github.io/publishing/2024/cheorwon/site/tour2024/main.html)
 
 + 동두천시 메인 레이아웃
-  + [미디어센터](https://shallow960.github.io/publishing/2024/ddc_media/site/media/main.html)
+  + [미디어센터(6월)](https://shallow960.github.io/publishing/2024/ddc_media/site/media/main.html)
 
 ***
 ### 2023 프로젝트
