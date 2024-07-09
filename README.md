@@ -39,7 +39,7 @@
   
 ***
 ### 2023 프로젝트
-+ 음성군청 메인 레이아웃
+++ 음성군청 메인 레이아웃
  + 11월
    + [팩토리투어](https://shallow960.github.io/publishing/2023/eumseong/site/factory/main.html)
      <details>
@@ -58,7 +58,7 @@
     
       ```
     </details>
-+ 충북도청 메인 레이아웃
+++ 충북도청 메인 레이아웃
   + 5월
     + [브랜드사이트](https://shallow960.github.io/publishing/2023/chungbuk2023/site/brand/main.html)
 
