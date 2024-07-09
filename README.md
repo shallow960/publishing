@@ -8,6 +8,7 @@
   
     ```
   </details>
+  
   + [스마트쉼센터(3월)](https://shallow960.github.io/publishing/2024/chungbuk2024/site/iapc2024/main.html)
     <details>
     <summary>작업과정</summary>
@@ -25,6 +26,7 @@
   
     ```
   </details>
+  
 + 동두천시 메인 레이아웃
   + [미디어센터(6월)](https://shallow960.github.io/publishing/2024/ddc_media/site/media/main.html)
       <details>
