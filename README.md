@@ -2,21 +2,19 @@
 + 충북도청 메인 레이아웃
   + 3월
     + [어린이도청](https://shallow960.github.io/publishing/2024/chungbuk2024/site/child2024/main.html)
-      <details>
-        <summary>작업과정</summary>
+    <details>
+    <summary>작업과정</summary>
+    ```html
 
-          ```html
-
-          ```
-      </details>
+    ```
+    </details>
 
     + [스마트쉼센터](https://shallow960.github.io/publishing/2024/chungbuk2024/site/iapc2024/main.html)
     <details>
-      <summary>작업과정</summary>
+    <summary>작업과정</summary>
+    ```html
 
-      ```html
-
-      ```
+    ```
     </details>
     
 + 철원군청 메인 레이아웃
