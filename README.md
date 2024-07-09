@@ -22,22 +22,19 @@
 + 철원군청 메인 레이아웃
   + [문화관광](https://shallow960.github.io/publishing/2024/cheorwon/site/tour2024/main.html)
 
-
-
-
 + 동두천시 메인 레이아웃
   + [미디어센터](https://shallow960.github.io/publishing/2024/ddc_media/site/media/main.html)
 
 ***
 ### 2023 프로젝트
-  ## 음성군청 메인 레이아웃
+  + 음성군청 메인 레이아웃
      + [팩토리투어(11월)](https://shallow960.github.io/publishing/2023/eumseong/site/factory/main.html)
 
       
     + [사진DB(12월)](https://shallow960.github.io/publishing/2023/eumseong/site/photo/main.html)
 
     
-  ## 충북도청 메인 레이아웃
+  + 충북도청 메인 레이아웃
     + 5월
       + [브랜드사이트](https://shallow960.github.io/publishing/2023/chungbuk2023/site/brand/main.html)
 
