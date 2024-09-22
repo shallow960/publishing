@@ -2,6 +2,7 @@
 + 동두천시 메인 레이아웃
     + 6월
         + [미디어센터](https://shallow960.github.io/publishing/2024/ddc_media/site/media/main.html)
+        + [미디어센터](https://shallow960.github.io/publishing/2024/D.html)
             <details>
             <summary>작업과정</summary>
 
