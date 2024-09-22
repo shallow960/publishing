@@ -1,0 +1,205 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="/1018/main.css">
+    <script type="text/javascript" src="/1018/main.js" charset="utf-8"></script>
+</head>
+<style>
+    .box {
+        display: block;
+        position: relative;
+        margin: 0 auto;
+        box-sizing: border-box;
+    }
+
+    .item {
+        display: block;
+        position: relative;
+        box-sizing: border-box;
+        font-size: 0;
+        line-height: 0;
+    }
+
+    .item span {
+        display: inline-block;
+        position: relative;
+        width: 30px;
+        height: 30px;
+        vertical-align: top;
+    }
+
+    .item .white {
+        background-color: rgb(160, 141, 141);
+    }
+
+    .item .black {
+        background-color: black;
+    }
+</style>
+
+<body>
+    <p>M x N 크기의 보드 각 정사각형의 색은 검은색, 흰색으로 칠해져있다.</p>
+    <p>조건1 - 체스판(8x8)은 검은색, 흰색이 번갈아가면서 칠해져있어야한다 (연속x)</p>
+    <p>조건2 - 변을 공유하는 두개의 사각형은 다른색으로 칠해져 있어야 한다.</p>
+    <p>결과조건 - 맨 위쪽칸이 흰색, 검은색 이 두경우밖에 없다.(연속x)</p>
+    <p>8x8의 크기의 정사각형의 색칠하기</p>
+    <p>8x8크기는 아무데서나 골라도 되며 다시 칠해야하는 정사각형의 최소개수를 구하는 프로그램</p>
+    <h3>예제1</h3>
+    <div class="box">
+        <div class="item">WBWBWBWB</div>
+        <div class="item">BWBWBWBW</div>
+        <div class="item">WBWBWBWB</div>
+        <div class="item">BWBBBWBW</div>
+        <div class="item">WBWBWBWB</div>
+        <div class="item">BWBWBWBW</div>
+        <div class="item">WBWBWBWB</div>
+        <div class="item">BWBWBWBW</div>
+    </div>
+    <!-- <h3>예제2</h3>
+    <div class="box">
+        <div class="item">BBBBBBBBWBWBW</div>
+        <div class="item">BBBBBBBBBWBWB</div>
+        <div class="item">BBBBBBBBWBWBW</div>
+        <div class="item">BBBBBBBBBWBWB</div>
+        <div class="item">BBBBBBBBWBWBW</div>
+        <div class="item">BBBBBBBBBWBWB</div>
+        <div class="item">BBBBBBBBWBWBW</div>
+        <div class="item">BBBBBBBBBWBWB</div>
+        <div class="item">WWWWWWWWWWBWB</div>
+        <div class="item">WWWWWWWWWWBWB</div>
+    </div> -->
+    <!-- <h3>예제3</h3>
+    <div class="box">
+        <div class="item">BWBWBWBW</div>
+        <div class="item">WBWBWBWB</div>
+        <div class="item">BWBWBWBW</div>
+        <div class="item">WBWBWBWB</div>
+        <div class="item">BWBWBWBW</div>
+        <div class="item">WBWBWBWB</div>
+        <div class="item">BWBWBWBW</div>
+        <div class="item">WBWBWBWB</div>
+    </div> -->
+    <!-- <h3>예제4</h3>
+    <div class="box">
+        <div class="item">BBBBBBBBBBBBBBBBBBBBBBB</div>
+        <div class="item">BBBBBBBBBBBBBBBBBBBBBBB</div>
+        <div class="item">BBBBBBBBBBBBBBBBBBBBBBB</div>
+        <div class="item">BBBBBBBBBBBBBBBBBBBBBBB</div>
+        <div class="item">BBBBBBBBBBBBBBBBBBBBBBB</div>
+        <div class="item">BBBBBBBBBBBBBBBBBBBBBBB</div>
+        <div class="item">BBBBBBBBBBBBBBBBBBBBBBB</div>
+        <div class="item">BBBBBBBBBBBBBBBBBBBBBBB</div>
+        <div class="item">BBBBBBBBBBBBBBBBBBBBBBW</div>
+    </div> -->
+    <!-- <div class="box">    
+        <div class="item">BBBBBBBBBB</div>
+        <div class="item">BBWBWBWBWB</div>
+        <div class="item">BWBWBWBWBB</div>
+        <div class="item">BBWBWBWBWB</div>
+        <div class="item">BWBWBWBWBB</div>
+        <div class="item">BBWBWBWBWB</div>
+        <div class="item">BWBWBWBWBB</div>
+        <div class="item">BBWBWBWBWB</div>
+        <div class="item">BWBWBWBWBB</div>
+        <div class="item">BBBBBBBBBB</div>
+    </div> -->
+<!--     <div class="log_bpx">최소 다시 칠해야 하는 칸의 개수, <span class="value"></span></div> -->
+
+    <script>
+        //item 모든요소 가져옴
+        const items = document.querySelectorAll('.item');
+
+        items.forEach(item => {
+            const text = item.textContent;
+            let newContent = '';
+
+            //각 문자마다 처리
+            for (let char of text) {
+                if (char === 'W') {
+                    //W - white클래스 부여
+                    newContent += `<span class="white">${char}</span>`;
+                } else if (char === 'B') {
+                    //B - black클래스 부여
+                    newContent += `<span class="black">${char}</span>`;
+                }
+            }
+
+            item.innerHTML = newContent;
+        });
+        //minItem 최소로 다시 칠해야하는 칸
+        function minItem(board, n, m) {
+            //입력된 값 기준으로 W,B 패턴 비교해서 입력(8줄로 반복되는 이유는 8x8이 예제이기 때문에)
+            const patterns = {
+                W: [
+                    ['W', 'B', 'W', 'B', 'W', 'B', 'W', 'B'],
+                    ['B', 'W', 'B', 'W', 'B', 'W', 'B', 'W'],
+                    ['W', 'B', 'W', 'B', 'W', 'B', 'W', 'B'],
+                    ['B', 'W', 'B', 'W', 'B', 'W', 'B', 'W'],
+                    ['W', 'B', 'W', 'B', 'W', 'B', 'W', 'B'],
+                    ['B', 'W', 'B', 'W', 'B', 'W', 'B', 'W'],
+                    ['W', 'B', 'W', 'B', 'W', 'B', 'W', 'B'],
+                    ['B', 'W', 'B', 'W', 'B', 'W', 'B', 'W']
+                ],
+                B: [
+                    ['B', 'W', 'B', 'W', 'B', 'W', 'B', 'W'],
+                    ['W', 'B', 'W', 'B', 'W', 'B', 'W', 'B'],
+                    ['B', 'W', 'B', 'W', 'B', 'W', 'B', 'W'],
+                    ['W', 'B', 'W', 'B', 'W', 'B', 'W', 'B'],
+                    ['B', 'W', 'B', 'W', 'B', 'W', 'B', 'W'],
+                    ['W', 'B', 'W', 'B', 'W', 'B', 'W', 'B'],
+                    ['B', 'W', 'B', 'W', 'B', 'W', 'B', 'W'],
+                    ['W', 'B', 'W', 'B', 'W', 'B', 'W', 'B']
+                ]
+            };
+
+            //체스판 패턴 비교
+            function pattern(startX, startY, pattern) {
+                //repaint 다시 칠하는 칸의 변수
+                let repaint = 0;
+                //입력된 크기로 잘라낸 영역에서 패턴과 비교
+                for (let i = 0; i < 8; i++) {
+                    for (let j = 0; j < 8; j++) {
+                        if (board[startX + i][startY + j] !== pattern[i][j]) {
+                            repaint++;
+                        }
+                    }
+                }
+                return repaint;
+            }
+
+            //최소 정수값
+            let minItem = Number.MAX_SAFE_INTEGER;
+
+            //입력한 보드 크기 패턴 비교
+            for (let i = 0; i <= n - 8; i++) {
+                for (let j = 0; j <= m - 8; j++) {
+                    // 각 8x8 영역에서 두 가지 패턴(W 시작, B 시작)과 비교한 결과를 계산
+                    const repaintW = pattern(i, j, patterns.W); // W로 시작하는 패턴
+                    const repaintB = pattern(i, j, patterns.B); // B로 시작하는 패턴
+
+                    minItem = Math.min(minItem, repaintW, repaintB);
+                }
+            }
+
+            return minItem; //최소 칠해야 하는 칸의 수 반환
+        }
+
+        //2차원 배열로 변환후 공백제거
+        const inputBoard = Array.from(document.querySelectorAll('.item')).map(item => item.textContent.trim());
+
+        //보드 문자열 배열을 2차원 배열로 변환 (각 문자열을 배열로 쪼갬)
+        const board = inputBoard.map(row => row.split(''));
+        const n = board.length;    //보드의 행 수
+        const m = board[0].length; //보드의 열 수
+
+        const result = minItem(board, n, m);
+
+        //value태그에 값 출력
+        document.querySelector('.value').textContent = result;
+    </script>
+</body>
+
+</html>
